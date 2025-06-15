@@ -4,5 +4,10 @@ app = FastAPI()
 
 @app.get('/')
 def index():
-    return "Hey Imran Shah"
+    return {"data": {"name" :"Imran Shah"}}
+
+
+@app.get('/about')
+def index():
+    return {"data":"About Page"}
 
